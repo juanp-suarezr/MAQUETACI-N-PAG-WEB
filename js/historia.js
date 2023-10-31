@@ -25,6 +25,18 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
 });
 
+function loginNav() {
+    var user = localStorage.getItem("currentUser");
+
+    
+    if (user) {
+        var userData = JSON.parse(user);
+        console.log(userData.rol);
+        alert("usuario:" + userData.correo);
+    } else {
+        window.location.href = "login.html";
+    }
+}
 
 // Función para abrir el modal de Guía de Tallas
 function abrirModalGuiaTallas(event) {
