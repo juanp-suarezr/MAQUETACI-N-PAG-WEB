@@ -32,7 +32,7 @@ function loginNav() {
         console.log(userData.rol);
         alert("usuario:" + userData.correo);
     } else {
-        window.location.href = "../../MAQUETACIÓN PAG WEB/index.html";
+        window.location.href = "login.html";
     }
 }
 
